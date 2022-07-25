@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Java webapp Deploy') {
             steps {
-                        sh 'cp /var/lib/jenkins/workspace/java-webapp-pipeline-slave/webapp/target/webapp.war /opt/apache-tomcat-10.0.22/webapps/'         
+                        sh 'cp /home/ec2-user/workspace/java-webapp-pipeline-slave/webapp/target/webapp.war /opt/apache-tomcat-10.0.22/webapps/'         
                     
             }           
         }
